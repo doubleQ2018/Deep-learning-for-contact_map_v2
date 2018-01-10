@@ -3,5 +3,7 @@ deep learning method for prediction of pretein contact map, with predicted conta
 
 ### Requirement
 > python2.7
+
 > tensorflow-gpu
+
 > numpy
