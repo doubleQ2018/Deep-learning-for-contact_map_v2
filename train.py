@@ -53,7 +53,7 @@ def train():
 
     train_step = tf.train.GradientDescentOptimizer(0.01).minimize(loss)
 
-    gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.10)
+    gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.80)
     sess = tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
     init_op = tf.group(tf.global_variables_initializer(),
             tf.local_variables_initializer())
@@ -81,7 +81,7 @@ def train():
     for step in xrange(FLAGS.max_iters):
         _, ids, L, los, output_prob = \
                 sess.run([train_step, name, seqLen, loss, prob])
-        print "iter %d: id = %s, seqLen = %d, loss = %.4f" %(step, ids, L, los)
+        print "iter %d: id = %s, seqLen = %3d, loss = %.4f" %(step, ids, L, los)
 
         if step % 100 == 0:
             summary_str = sess.run(summary_op)
