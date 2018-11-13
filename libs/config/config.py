@@ -4,15 +4,15 @@ import tensorflow as tf
 
 # database files
 tf.app.flags.DEFINE_string(
-    'train_file', '/home/zhangqi/workspace/contact_map/database/pdb25-6767-train.release.contactFeatures.pkl',
+    'train_file', 'train.pkl',
     'Directory where checkpoints and event logs are written to.')
 
 tf.app.flags.DEFINE_string(
-    'valid_file', '/home/zhangqi/workspace/contact_map/database/pdb25-6767-valid.release.contactFeatures.pkl',
+    'valid_file', 'valid.pkl',
     'Directory where checkpoints and event logs are written to.')
 
 tf.app.flags.DEFINE_string(
-    'test_file', '/home/zhangqi/workspace/contact_map/database/pdb25-test-500.release.contactFeatures.pkl',
+    'test_file', 'test.pkl',
     'Directory where checkpoints and event logs are written to.')
 
 # dir paths
@@ -34,7 +34,7 @@ tf.app.flags.DEFINE_integer(
     'filter size for 2D conv.')
 
 tf.app.flags.DEFINE_integer(
-    'block_num_1d', 0,
+    'block_num_1d', 1,
     'num of residual block for 1D conv.')
 
 tf.app.flags.DEFINE_integer(
