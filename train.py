@@ -12,7 +12,7 @@ import os
 
 
 # using GPU numbered 0
-os.environ["CUDA_VISIBLE_DEVICES"]='0'
+os.environ["CUDA_VISIBLE_DEVICES"]='1'
 
 def restore(sess):
      if FLAGS.restore_previous_if_exists:
