@@ -14,6 +14,6 @@ Deep learning method for prediction of pretein contact map, with predicted conta
 
 ## Need to do
 1. Get protein structure 1D features(for example sequence, sse, ACA, and so on), and 2D features(for example predicted CCMpred, PSICOV and other pairwise features)
-2. Modify `read_into_tfrecord.py`, and used it to transfer your data to tfrecord
-3. set your own config in `libs/config/config.py`
-4. run `train.py`
+2. Modify `./read_into_tfrecord.py`, and used it to transfer your data to tfrecord
+3. set your own config in `./libs/config/config.py`
+4. run `python train.py`
