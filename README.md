@@ -1,6 +1,6 @@
 # Deep-learning-for-contact\_map\_v2
 
-Deep learning method for prediction of pretein contact map, with predicted contact map by other software(for example CCMpred, PSICOV, and so on) as input.
+This is an implementation of [Accurate De Novo Prediction of Protein Contact Map by Ultra-Deep Learning Model](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005324), which is a deep learning method for prediction of pretein contact map, with predicted contact map by other software(for example CCMpred, PSICOV, and so on) as input.
 
 ## Requirements
 
