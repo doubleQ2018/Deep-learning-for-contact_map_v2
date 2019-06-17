@@ -1,6 +1,6 @@
 # Deep-learning-for-contact\_map\_v2
 
-Deep learning method for prediction of pretein contact map, with predicted contact map by other software(for example CCMpred, PSICOV, and so on) as input.
+This is an implementation of [Accurate De Novo Prediction of Protein Contact Map by Ultra-Deep Learning Model](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005324), which is a deep learning method for prediction of pretein contact map, with predicted contact map by other software(for example CCMpred, PSICOV, and so on) as input.
 
 ## Requirements
 
@@ -13,7 +13,7 @@ Deep learning method for prediction of pretein contact map, with predicted conta
 - Batch normalization and L2 regulation were implemented for optimization. 
 
 ## Need to do
-1. Get protein structure 1D features(for example sequence, sse, ACA, and so on), and 2D features(for example predicted CCMpred, PSICOV and other pairwise feature)
-2. Modify `read\_into\_tfrecord.py`, and used it to transfer your data to tfrecord
-3. set your own config in `libs/config/config.py`
-4. run `train.py`
+1. Get protein structure 1D features(for example sequence, sse, ACA, and so on), and 2D features(for example predicted CCMpred, PSICOV and other pairwise features)
+2. Modify `./read_into_tfrecord.py`, and used it to transfer your data to tfrecord
+3. set your own config in `./libs/config/config.py`
+4. run `python train.py`
